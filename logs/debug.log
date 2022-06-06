@@ -1,0 +1,605 @@
+[DEBUG] 2022-05-27 10:58:23 org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:105) - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG] 2022-05-27 10:58:23 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 10:58:23 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 10:58:23 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 10:58:23 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 10:58:23 org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137) - Opening JDBC Connection
+[DEBUG] 2022-05-27 10:58:25 org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:434) - Created connection 720167805.
+[DEBUG] 2022-05-27 10:58:25 org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101) - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2aece37d]
+[DEBUG] 2022-05-27 10:58:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 10:58:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 10:58:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 9(Integer), 36288(Long), 9(Integer), node(String)
+[DEBUG] 2022-05-27 10:58:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: zeros(String), 9(Integer), 18861(Long), 9(Integer), zeros(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 0
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 2562158(Long), edge(String), 9(Integer), 9(Integer), edge(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String), 36288(Long), DBLPV13(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String), 2562158(Long), DBLPV13(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 12(Integer), 468(Long), 12(Integer), node(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 3202(Long), directed_edge(String), 12(Integer), 12(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String), 468(Long), demo_graph(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String), 3202(Long), demo_graph(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 10(Integer), 15229(Long), 10(Integer), node(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 62752(Long), directed_edge(String), 10(Integer), 10(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String), 15229(Long), nethept(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String), 62752(Long), nethept(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 13(Integer), 37149(Long), 13(Integer), node(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 348476(Long), directed_edge(String), 13(Integer), 13(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String), 37149(Long), netphy(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String), 348476(Long), netphy(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit_node(String), 8(Integer), 10984(Long), 8(Integer), reddit_node(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 672447(Long), reddit_edge(String), 8(Integer), 8(Integer), reddit_edge(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String), 10984(Long), reddit(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String), 672447(Long), reddit(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 10:58:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: account(String), 7(Integer), 84888775(Long), 7(Integer), account(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: balance(String), 7(Integer), 72781477(Long), 7(Integer), balance(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 1029455838(Long), flow(String), 7(Integer), 7(Integer), flow(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String), 84888775(Long), trans(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String), 1029455838(Long), trans(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki_node(String), 11(Integer), 9227(Long), 11(Integer), wiki_node(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 157474(Long), wiki_edge(String), 11(Integer), 11(Integer), wiki_edge(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String), 9227(Long), wiki(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String), 157474(Long), wiki(String)
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.transaction.jdbc.JdbcTransaction.commit(JdbcTransaction.java:70) - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2aece37d]
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123) - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2aece37d]
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91) - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2aece37d]
+[DEBUG] 2022-05-27 10:58:28 org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:391) - Returned connection 720167805 to pool.
+[DEBUG] 2022-05-27 13:09:04 org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:105) - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG] 2022-05-27 13:09:04 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 13:09:04 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 13:09:04 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 13:09:04 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137) - Opening JDBC Connection
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:434) - Created connection 720167805.
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101) - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2aece37d]
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 9(Integer), 36288(Long), 9(Integer), node(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: zeros(String), 9(Integer), 18861(Long), 9(Integer), zeros(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 0
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 2562158(Long), edge(String), 9(Integer), 9(Integer), edge(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String), 36288(Long), DBLPV13(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String), 2562158(Long), DBLPV13(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 12(Integer), 468(Long), 12(Integer), node(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 3202(Long), directed_edge(String), 12(Integer), 12(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String), 468(Long), demo_graph(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String), 3202(Long), demo_graph(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 10(Integer), 15229(Long), 10(Integer), node(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 62752(Long), directed_edge(String), 10(Integer), 10(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String), 15229(Long), nethept(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String), 62752(Long), nethept(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 13(Integer), 37149(Long), 13(Integer), node(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 348476(Long), directed_edge(String), 13(Integer), 13(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String), 37149(Long), netphy(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String), 348476(Long), netphy(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit_node(String), 8(Integer), 10984(Long), 8(Integer), reddit_node(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 672447(Long), reddit_edge(String), 8(Integer), 8(Integer), reddit_edge(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String), 10984(Long), reddit(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String), 672447(Long), reddit(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: account(String), 7(Integer), 84888775(Long), 7(Integer), account(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: balance(String), 7(Integer), 72781477(Long), 7(Integer), balance(String)
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 1029455838(Long), flow(String), 7(Integer), 7(Integer), flow(String)
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String), 84888775(Long), trans(String)
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String), 1029455838(Long), trans(String)
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String)
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki_node(String), 11(Integer), 9227(Long), 11(Integer), wiki_node(String)
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String)
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 157474(Long), wiki_edge(String), 11(Integer), 11(Integer), wiki_edge(String)
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String), 9227(Long), wiki(String)
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String), 157474(Long), wiki(String)
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.transaction.jdbc.JdbcTransaction.commit(JdbcTransaction.java:70) - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2aece37d]
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123) - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2aece37d]
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91) - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2aece37d]
+[DEBUG] 2022-05-27 13:09:06 org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:391) - Returned connection 720167805 to pool.
+[DEBUG] 2022-05-27 14:10:48 org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:105) - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137) - Opening JDBC Connection
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:434) - Created connection 1466073198.
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101) - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5762806e]
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 9(Integer), 36288(Long), 9(Integer), node(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: zeros(String), 9(Integer), 18861(Long), 9(Integer), zeros(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 0
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 2562158(Long), edge(String), 9(Integer), 9(Integer), edge(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String), 36288(Long), DBLPV13(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String), 2562158(Long), DBLPV13(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 12(Integer), 468(Long), 12(Integer), node(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 3202(Long), directed_edge(String), 12(Integer), 12(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String), 468(Long), demo_graph(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String), 3202(Long), demo_graph(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 10(Integer), 15229(Long), 10(Integer), node(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String)
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:10:49 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 62752(Long), directed_edge(String), 10(Integer), 10(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String), 15229(Long), nethept(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String), 62752(Long), nethept(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 13(Integer), 37149(Long), 13(Integer), node(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 348476(Long), directed_edge(String), 13(Integer), 13(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String), 37149(Long), netphy(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String), 348476(Long), netphy(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit_node(String), 8(Integer), 10984(Long), 8(Integer), reddit_node(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 672447(Long), reddit_edge(String), 8(Integer), 8(Integer), reddit_edge(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String), 10984(Long), reddit(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String), 672447(Long), reddit(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: account(String), 7(Integer), 84888775(Long), 7(Integer), account(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: balance(String), 7(Integer), 72781477(Long), 7(Integer), balance(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 1029455838(Long), flow(String), 7(Integer), 7(Integer), flow(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String), 84888775(Long), trans(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String), 1029455838(Long), trans(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki_node(String), 11(Integer), 9227(Long), 11(Integer), wiki_node(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 157474(Long), wiki_edge(String), 11(Integer), 11(Integer), wiki_edge(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String), 9227(Long), wiki(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String), 157474(Long), wiki(String)
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.transaction.jdbc.JdbcTransaction.commit(JdbcTransaction.java:70) - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5762806e]
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123) - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5762806e]
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91) - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5762806e]
+[DEBUG] 2022-05-27 14:10:50 org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:391) - Returned connection 1466073198 to pool.
+[DEBUG] 2022-05-27 14:12:00 org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:105) - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG] 2022-05-27 14:12:00 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:12:00 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:12:00 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:12:00 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:12:22 org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:105) - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG] 2022-05-27 14:12:22 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:12:22 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:12:22 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:12:22 org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:363) - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2022-05-27 14:12:23 org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137) - Opening JDBC Connection
+[DEBUG] 2022-05-27 14:12:24 org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:434) - Created connection 1763344271.
+[DEBUG] 2022-05-27 14:12:24 org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101) - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@691a7f8f]
+[DEBUG] 2022-05-27 14:12:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 14:12:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:12:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 9(Integer), 36288(Long), 9(Integer), node(String)
+[DEBUG] 2022-05-27 14:12:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 14:12:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:12:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: zeros(String), 9(Integer), 18861(Long), 9(Integer), zeros(String)
+[DEBUG] 2022-05-27 14:12:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 0
+[DEBUG] 2022-05-27 14:12:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String)
+[DEBUG] 2022-05-27 14:12:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:12:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 2562158(Long), edge(String), 9(Integer), 9(Integer), edge(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String), 36288(Long), DBLPV13(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: DBLPV13(String), 2562158(Long), DBLPV13(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 12(Integer), 468(Long), 12(Integer), node(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 3202(Long), directed_edge(String), 12(Integer), 12(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String), 468(Long), demo_graph(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: demo_graph(String), 3202(Long), demo_graph(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 10(Integer), 15229(Long), 10(Integer), node(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 62752(Long), directed_edge(String), 10(Integer), 10(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String), 15229(Long), nethept(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: nethept(String), 62752(Long), nethept(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: node(String), 13(Integer), 37149(Long), 13(Integer), node(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 348476(Long), directed_edge(String), 13(Integer), 13(Integer), directed_edge(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String), 37149(Long), netphy(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: netphy(String), 348476(Long), netphy(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit_node(String), 8(Integer), 10984(Long), 8(Integer), reddit_node(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 672447(Long), reddit_edge(String), 8(Integer), 8(Integer), reddit_edge(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String), 10984(Long), reddit(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: reddit(String), 672447(Long), reddit(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: account(String), 7(Integer), 84888775(Long), 7(Integer), account(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: balance(String), 7(Integer), 72781477(Long), 7(Integer), balance(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 1029455838(Long), flow(String), 7(Integer), 7(Integer), flow(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String), 84888775(Long), trans(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: trans(String), 1029455838(Long), trans(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update vertex_tag set tag_name = ? , space_id = ? , vertex_num = ? where space_id = ? and tag_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki_node(String), 11(Integer), 9227(Long), 11(Integer), wiki_node(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: select * from meta where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update edge_type set edge_num = ? , type_name = ? , space_id = ? where space_id = ? and type_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 157474(Long), wiki_edge(String), 11(Integer), 11(Integer), wiki_edge(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , vertices = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String), 9227(Long), wiki(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: update meta set space_name = ? , edges = ? where space_name = ?
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: wiki(String), 157474(Long), wiki(String)
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.transaction.jdbc.JdbcTransaction.commit(JdbcTransaction.java:70) - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@691a7f8f]
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123) - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@691a7f8f]
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91) - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@691a7f8f]
+[DEBUG] 2022-05-27 14:12:27 org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:391) - Returned connection 1763344271 to pool.

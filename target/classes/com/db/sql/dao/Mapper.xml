@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.sql.dao.GraphDao">
+    <insert id="insertMeta" useGeneratedKeys="true" keyProperty="space_id" parameterType="com.db.sql.pojo.Meta">
+insert into meta(space_name,edges,vertices) values (#{space_name},#{edges},#{vertices})
+</insert>
+
+    <insert id="insertTag" useGeneratedKeys="true" keyProperty="tag_id" parameterType="com.db.sql.pojo.Tag">
+insert into vertex_tag(tag_name,vertex_num,space_id) values (#{tag_name},#{vertex_num},#{space_id})
+</insert>
+
+    <insert id="insertTagField" useGeneratedKeys="true" keyProperty="field_id" parameterType="com.db.sql.pojo.TagField">
+insert into vertex_field(field_name,format,tag_id,space_id) values (#{field_name},#{format},#{tag_id},#{space_id})
+</insert>
+
+    <insert id="insertEdge" useGeneratedKeys="true" keyProperty="type_id" parameterType="com.db.sql.pojo.Edge">
+insert into edge_type(type_name,edge_num,space_id) values (#{type_name},#{edge_num},#{space_id})
+</insert>
+
+    <insert id="insertEdgeField" useGeneratedKeys="true" keyProperty="type_id" parameterType="com.db.sql.pojo.EdgeField">
+insert into edge_field(field_name,format,type_id,space_id) values (#{field_name},#{format},#{type_id},#{space_id})
+</insert>
+
+    <update id="updateMetaByMap">
+        update meta
+set
+        <foreach collection="_parameter" item="val" index="key" separator=",">
+${key} = #{val}
+</foreach>
+        where space_name = #{space_name}
+    </update>
+    <update id="updateTagByMap">
+        update vertex_tag
+        set
+        <foreach collection="_parameter" item="val" index="key" separator=",">
+        ${key} = #{val}
+        </foreach>
+        where space_id = #{space_id}
+        and tag_name = #{tag_name}
+    </update>
+
+    <select id="selectByName" resultType="com.db.sql.pojo.Meta">
+    select * from meta where space_name = #{space_name}
+          
+    </select>
+
+
+    <update id="updateEdgeByMap">
+        update edge_type
+    set
+        <foreach collection="_parameter" item="val" index="key" separator=",">
+        ${key} = #{val}
+    </foreach>
+        where space_id = #{space_id}
+        and type_name = #{type_name}
+    </update>
+
+</mapper>
